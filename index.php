@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class="banner">
-      <img src="images/logo.png">
     </div>
       <div class="topnav">
           <a href="#home" class="active">Home</a>
@@ -26,10 +25,19 @@
               <a href="#podcasts">Podcasts</a>
               <a href="#videos">Videos</a>
           </div>
+          <div class="slogandiv">
+            <img src="images/slogan.png" alt="" srcset="">
+          </div>
+          <div class="subbanner">
+          
+          </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
       </div>
+
+
+      
 
 
 <script src="script.js"></script>
