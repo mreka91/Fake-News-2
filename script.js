@@ -1,3 +1,4 @@
+// Click-function for hamburger-menu
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -6,3 +7,4 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+
