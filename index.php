@@ -1,3 +1,10 @@
+<?php
+
+require __DIR__ . "/data.php";
+require __DIR__ . "/functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +16,7 @@
     <title>Fake News</title>
 </head>
 <body>
+  <main>
     <div class="banner">
     </div>
       <div class="topnav">
@@ -29,13 +37,18 @@
             <img src="images/slogan.png" alt="" srcset="">
           </div>
           <div class="subbanner">
-          
           </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
     <i class="fa fa-bars"></i>
   </a>
       </div>
+      <?php foreach (latestItem($newsitems) as $latest) : ?>
+        <img src="<?php echo $latest["image"]; ?>" />
+          <p>Author: <?php echo $latest["author"]; ?> </p>
+      <?php endforeach; ?>
 
+
+  </main> 
 
       
 
