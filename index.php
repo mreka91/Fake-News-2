@@ -1,5 +1,4 @@
 <?php
-
 require __DIR__ . "/data.php";
 require __DIR__ . "/functions.php";
 
@@ -16,43 +15,6 @@ require __DIR__ . "/functions.php";
     <title>Fake News</title>
 </head>
 <body>
-  <main>
-    <div class="banner">
-    </div>
-      <div class="topnav">
-          <a href="#home" class="active">Home</a>
-          <div id="myLinks">
-              <a href="#sweden">Sweden</a>
-              <a href="#global">Global</a>
-              <a href="#politics">Politics</a>
-              <a href="#tech">Tech</a>
-              <a href="#business">Business</a>
-              <a href="#climate">Climate</a>
-              <a href="#arts">Arts</a>
-              <a href="#entertainment">Entertainment</a>
-              <a href="#podcasts">Podcasts</a>
-              <a href="#videos">Videos</a>
-          </div>
-          <div class="slogandiv">
-            <img src="images/slogan.png" alt="" srcset="">
-          </div>
-          <div class="subbanner">
-          </div>
-  <a href="javascript:void(0);" class="icon" onclick="burgerFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-      </div>
-      <?php foreach (latestItem($newsitems) as $latest) : ?>
-        <img src="<?php echo $latest["image"]; ?>" />
-          <p>Author: <?php echo $latest["author"]; ?> </p>
-      <?php endforeach; ?>
 
-
-  </main> 
-
-      
-
-
-<script src="script.js"></script>
 </body>
 </html>
