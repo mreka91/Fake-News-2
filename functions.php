@@ -1,7 +1,15 @@
 <?php
-declare(strict_types=1);
+ declare(strict_types=1);
 
-require __DIR__ . "data.php";
+require __DIR__ . "/data.php";
+
+
+
+function formatDate(DateTime $dateFormat) : string{
+
+    return (date_format($dateFormat, "j/n-Y"));
+
+}
 
 function sortDate(array $sortByDate) : array{
     
@@ -22,13 +30,6 @@ function nonLatestItem(array $array) : array{
 
     $sort = sortDate($array);
     return array_slice($sort, 1);
-}
-
-
-function formatDate(DateTime $time) : string{
-
-    return (date_format($time, "j/n-Y"));
-
 }
 
 
