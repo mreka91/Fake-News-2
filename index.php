@@ -16,18 +16,18 @@ require __DIR__ . "/functions.php";
     <link rel="stylesheet" href="cards.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
-    <title>Fake News</title>
+    <title>Fake News Network</title>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="menu-container">
             <div class="logo">
-            <div class="nav-toggle" id="navToggle">
-                <img id="navClosed" class="navIcon" src="images/openburger.png" alt="open burger">
-                <img id="navOpen" class="navIcon hidden" src="images/closeburger.png" alt="close burger">
+                <div class="nav-toggle" id="navToggle">
+                    <img id="navClosed" class="navIcon" src="images/openburger.png" alt="open burger">
+                    <img id="navOpen" class="navIcon hidden" src="images/closeburger.png" alt="close burger">
             </div>
-                <h2>Fake News Network</h2>
-            </div>
+                    <h2>Fake News Network</h2>
+                </div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -42,32 +42,31 @@ require __DIR__ . "/functions.php";
         </div>
     </header>
 
-<main>
-<h1>Latest News</h1>
-    <div class="post-container">
-        <?php foreach (sortDate($newsItems) as $newsitem) : ?>    
-            <div class="card-container">
-                <div class="post-img" style="background-image: url(<?php echo $newsitem["image"] ?>);">
-            </div>
-            <div class="post-info">
-                <div class="post--date">
-           <span class="spandiv"> <span><?php echo formatDate($newsitem["date"]); ?></span>
-             <span><?php echo $newsitem["likes"]?><i class="fas fa-thumbs-up"></i></span></span>
-                <h1 class="post-title">
-                    <?php echo $newsitem["title"]; ?></h1>
-                <p class="post-content"> 
-                    <?php echo $newsitem["content"]; ?></p>
-                    <a href="#" class="readmore">Continue Reading</a>
-                    <p class="writtenby">By: <?php echo $newsitem["author"]["name"]; ?></p>
-
+    <main>
+    <h1>Latest News</h1>
+        <div class="post-container">
+            <?php foreach (sortDate($newsItems) as $newsitem) : ?>    
+                <div class="card-container">
+                    <div class="post-img" style="background-image: url(<?php echo $newsitem["image"] ?>);">
+                </div>
+                <div class="post-info">
+                    <div class="post--date">
+                        <span class="spandiv"> 
+                        <span><?php echo formatDate($newsitem["date"]); ?></span>
+                        <span><?php echo $newsitem["likes"]?><i class="fas fa-thumbs-up"></i></span>
+                        </span>
+                        <h1 class="post-title">
+                        <?php echo $newsitem["title"]; ?></h1>
+                        <p class="post-content"> 
+                        <?php echo $newsitem["content"]; ?></p>
+                        <a href="#" class="readmore">Continue Reading</a>
+                        <p class="writtenby">By: <?php echo $newsitem["author"]["name"]; ?></p>
+                    </div>
+                </div>
         </div>
+            <?php endforeach; ?>       
         </div>
-        </div>
-        <?php endforeach; ?>   
-        
-    </div>
-
-</main>
+    </main>
 
 <script src="script.js"></script>
 </body>

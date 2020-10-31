@@ -1,22 +1,35 @@
+/* removal of list type and standard padding */
+
 ul {
+    
     list-style-type: none;
     padding: 0;
 }
   
 li {
+
     display: inline-block;
     padding: 0 1.25rem;
 }
-  
+
+/* Color for menu-text */
+
+
 li a {
+
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+/* Menu hover-effect */
+
   
 li:hover a {
+
     text-decoration: underline;
 }
 
+/* Styling for interactions with the menu and its items. */
 
 .nav-toggle {
     
@@ -26,32 +39,32 @@ li:hover a {
     top: 1.5rem;
     cursor: pointer;
 }
+
+/* ..and when interacting with the open/close burger-buttons*/
   
 .nav-toggle img {
+
     width: 1.5rem;
     transition: 500ms all ease;
 }
-  
+
+/* used to hide/show and manipulate the menu based on screen size or which item is clicked */
   
 .open {
 
     height: 100vh;
-    position: fixed;
-    width: 100%;
-    background-color: black;
-    top: 60px;
-    left: 0;
 }
     
 .hidden {
+
     display: none;
 }
   
-  
+/* How the menu changes into a top-style navbar at higher screen resolutions */
 
 @media all and (max-width: 895px) {
 
-    .container {
+    .menu-container {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -60,7 +73,11 @@ li:hover a {
       height: 0;
       width: 100%;
       overflow: hidden;
-      transition: 250ms height ease-in-out;
+      transition: 250ms ease-in-out;
+      background-color: black;
+      position: fixed;
+      top: 60px;
+      left: 0;
     }
   
     li {

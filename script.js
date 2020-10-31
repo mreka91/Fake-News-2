@@ -5,6 +5,8 @@ const navOpenIcon = document.querySelector("#navOpen");
 const navIcon = document.querySelectorAll(".navIcon");
 const nav = document.querySelector("nav");
 
+ /* On-click-function for hiding and showing open- and close-buttons based on which is clicked, calling css classes '.open' and '.hidden'*/
+
 navToggle.addEventListener("click", () => {
   nav.classList.toggle("open");
   navIcon.forEach((icon) => {
@@ -12,6 +14,7 @@ navToggle.addEventListener("click", () => {
   });
 });
 
+/* Function that hides or shows menu/burger based on screen-size, calling css classes '.open' and '.hidden' */
 
 window.addEventListener(
   "resize", () => {

@@ -1,24 +1,27 @@
+/* Nice new-york-times-looking font and removed base-margin. */
 
 body{
 
     font-family: 'Playfair Display', serif;
     margin: 0;
-
 }
+
+/* Style and positioning for the top menu and logo */
 
 header {
     
-    background: #000000;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     height: 60px;
-
 }
+
+/* Basic styling of proportions to the menu-container */
   
-.container {
+.menu-container {
 
     display: flex;
     justify-content: space-between;
@@ -30,28 +33,27 @@ header {
 
 }
 
+/* Proportions to- and making the main container of the news-cards into a grid */
+
 .post-container{
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 100%;
-    max-width: 100%;
-    
+    max-width: 100%; 
 }
 
+/* positional/proportional outline of the individual cards */
 
 .card-container{
     
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 40px;
     margin: 10px;
 }
 
-.card-container img{
-
-    width: 100%
-}
+/* Proportions for the headline-images in the cards  */
 
 .post-img{
     width: 100%;
@@ -61,14 +63,21 @@ header {
     background-position: 60% 0%;
 }
 
+/* Padding top to make sure the content doesn't bump into the top menu*/
+
 main{
+
     padding-top: 60px;
-    
 }
 
+/* Centering the 'Latest News' h1*/
+
 main h1{
+
     text-align: center;
 }
+
+/* Re-positioning span-items */
 
 .spandiv{
 
@@ -82,11 +91,13 @@ main h1{
 }
 
 .writtenby{
+
    text-align: right;
 }
 
+/* 1-column grid at lower screen sizes, as well as reduced padding and font-size for the card and headline-h1 */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
 
     .card-container{
 
@@ -103,3 +114,4 @@ main h1{
     }
 
 }
+

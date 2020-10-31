@@ -1,7 +1,9 @@
 <?php
- declare(strict_types=1);
+declare(strict_types=1);
 
 require __DIR__ . "/data.php";
+
+/* A function to sort the array-items based on date of publishing */
 
 function sortDate(array $sortByDate) : array{
     
@@ -10,6 +12,8 @@ function sortDate(array $sortByDate) : array{
     });
         return $sortByDate;
 }
+
+/* A function that manipulates which format the date is returned in when called on in the index.php-file */
 
 function formatDate(DateTime $dateFormat) : string{
 
@@ -25,5 +29,3 @@ function formatDate(DateTime $dateFormat) : string{
 
 
 
-// This is the file where you can keep all your functions. Remember to NOT
-// execute/run any functions in this file. Keep it dumb.
