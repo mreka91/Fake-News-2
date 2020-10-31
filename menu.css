@@ -19,6 +19,7 @@ li:hover a {
 
 
 .nav-toggle {
+    
     display: none;
     position: absolute;
     right: 1rem;
@@ -33,7 +34,13 @@ li:hover a {
   
   
 .open {
+
     height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 60px;
+    left: 0;
 }
     
 .hidden {

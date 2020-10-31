@@ -3,14 +3,6 @@
 
 require __DIR__ . "/data.php";
 
-
-
-function formatDate(DateTime $dateFormat) : string{
-
-    return (date_format($dateFormat, "j/n-Y"));
-
-}
-
 function sortDate(array $sortByDate) : array{
     
     usort($sortByDate, function ($a, $b) {
@@ -19,18 +11,13 @@ function sortDate(array $sortByDate) : array{
         return $sortByDate;
 }
 
-function latestItem(array $array) : array
-{
-    $sort = sortDate($array);
-    return array(array_shift($sort));
+function formatDate(DateTime $dateFormat) : string{
+
+    return (date_format($dateFormat, "Y-m-d"));
 
 }
 
-function nonLatestItem(array $array) : array{
 
-    $sort = sortDate($array);
-    return array_slice($sort, 1);
-}
 
 
 

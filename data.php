@@ -11,7 +11,7 @@ $newsItems = [
         "ID" => 0,
         "name" => "Mappo Trell",
         ],
-        "date" => new DateTime("2020-11-29"),
+        "date" => new DateTime("2020-05-29"),
         "likes" => 56356,
         "content" => 
             "After a year-long legal dispute between Facebook and the ECJ, the trial came to a shocking conclusion to say the least when Mark Zuckerberg arrived in Luxembourg without any lawyers. Claiming that the allegations were baseless, he, a genius, didn't need any assistance in defending his company. Zuckerberg commented that 'My company has been falsely accused by you huma- I mean people, and I intend to put these allegations to rest.' The trial began with EU Chief Prosecutor Laura Codruţa Kövese's opening statement, followed by Zuckerberg pleading not guilty to the allegations. The truly shocking turn of events came when Mr. Zuckerberg was put to the witness-stand where he froze and his eyes turned blank. Worried that Mr. Zuckerberg may have suffered a stroke, security rushed to help him, only to discover that he had spilled a glass of water on himself and thusly suffered a short-circuit. Mr. Zuckerberg is currently flying to Silicon Valley for repairs, and Facebook was sentenced to a fine of £500 million. Not thinking to waterproof Zuckerberg's circuits turned out to be a costly mistake, in the future he might want to consider not cheaping out when hiring engineers." 
@@ -21,7 +21,7 @@ $newsItems = [
 
     [
 
-        "title" => "Something, Something, Dark Side.",
+        "title" => "A Very Stable Genius.",
         "image" => "https://images.jacobinmag.com/wp-content/uploads/2020/06/26182329/GettyImages-1222705420.jpg",
         "author" => [
         "ID" => 0,
@@ -76,7 +76,7 @@ $newsItems = [
         "ID" => 2,
         "name" => "Bilbo Swaggins",
         ],
-        "date" => new DateTime("2020-05-03"),
+        "date" => new DateTime("2020-12-01"),
         "likes" => 2211,
         "content" => 
             "It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter. Because it's about motivating the doers. Because I’m here to follow my dreams and inspire other people to follow their dreams, too." 
@@ -87,7 +87,7 @@ $newsItems = [
     [
 
         "title" => "Baby Yoda Reflects On Difficulties Of Shooting Season One Of The Mandalorian.",
-        "image" => "https://cdn.vox-cdn.com/thumbor/xvmT7cJdssNPDhdfkoCFMWEE2PI=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/19659612/Screen_Shot_2020_01_30_at_4.37.59_PM.png",
+        "image" => "https://upload.wikimedia.org/wikipedia/en/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg",
         "author" => [
         "ID" => 2,
         "name" => "Bilbo Swaggins",
@@ -119,7 +119,7 @@ $newsItems = [
     [
 
         "title" => "Smaug Breaks Silence On Recent Poverty Struggles",
-        "image" => "https://static.wikia.nocookie.net/dragons/images/e/e2/Smaug_Movie.jpg/revision/latest/scale-to-width-down/450?cb=20200922202451",
+        "image" => "https://assets.puzzlefactory.pl/puzzle/226/878/original.jpg",
         "author" => [
         "ID" => 3,
         "name" => "Oggy Ogre",
